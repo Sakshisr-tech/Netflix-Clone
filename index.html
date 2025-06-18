@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span><img width="53" src="assests/images/logo.svg" alt=""></span>
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <div class="language-wrapper">
+                    <svg class="globe-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.5C6.80653 1.5 5.73343 3.32386 5.37587 6H10.6241C10.2666 3.32386 9.19347 1.5 8 1.5ZM10.6241 10H5.37587C5.73343 12.6761 6.80653 14.5 8 14.5C9.19347 14.5 10.2666 12.6761 10.6241 10ZM12.1378 6C11.7446 3.04264 10.0895 0.5 8 0.5C5.91053 0.5 4.25537 3.04264 3.86224 6H1.5V7.5H3.86224C3.96172 8.31317 4.12669 9.07875 4.34629 9.78476C4.45387 10.1074 4.57601 10.4163 4.71137 10.7097L3.05029 12.3708L4.11095 13.4315L5.77203 11.7704C6.34157 12.7161 7.10566 13.5 8 13.5C8.89434 13.5 9.65843 12.7161 10.228 11.7704L11.889 13.4315L12.9497 12.3708L11.2886 10.7097C11.424 10.4163 11.5461 10.1074 11.6537 9.78476C11.8733 9.07875 12.0383 8.31317 12.1378 7.5H14.5V6H12.1378Z" fill="white"/>
+                    </svg>
+                    <select class="language-select" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी</option>
+                        <option value="te">తెలుగు</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="ml">മലയാളം</option>
+                        <option value="bn">বাংলা</option>
+                    </select>
+                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.66699 6L8.00033 11.3333L13.3337 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <a href="signin.html" class="btn btn-red-sm" tabindex="0" style="z-index: 100; position: relative;">Sign In</a>
+            </div>
+        </nav>
+        <div class="box">
+        </div>
+        <div class="hero">
+            <span>
+                <h1> Unlimited movies, TV shows and more</h1>
+            </span>
+            <span>Starts at ₹149. Cancel at any time.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero-buttons">
+                <input type="text" placeholder="Email Address">
+                <button class="btn btn-red">Get Started &gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="movies-section">
+        <div class="movies-container">
+            <div id="trending" class="category-row">
+                <h2>Trending Now</h2>
+                <div class="movie-slider">
+                    <button class="slider-arrow left">&lt;</button>
+                    <div class="movie-cards"></div>
+                    <button class="slider-arrow right">&gt;</button>
+                </div>
+            </div>
+
+            <div id="newReleases" class="category-row">
+                <h2>New Releases</h2>
+                <div class="movie-slider">
+                    <button class="slider-arrow left">&lt;</button>
+                    <div class="movie-cards"></div>
+                    <button class="slider-arrow right">&gt;</button>
+                </div>
+            </div>
+
+            <div id="popular" class="category-row">
+                <h2>Popular on Netflix</h2>
+                <div class="movie-slider">
+                    <button class="slider-arrow left">&lt;</button>
+                    <div class="movie-cards"></div>
+                    <button class="slider-arrow right">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="first">
+        <div>
+            <span>Enjoy on your TV</span>
+            <span>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+        </div>
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay="" loop="" muted="" style="height: 308px;"></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <section class="first second">
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                alt="">
+
+        </div>
+        <div>
+            <span>Download your shows to watch offline</span>
+            <span>Save your favourites easily and always have something to watch.</span>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+    <section class="first third">
+        <div>
+            <span>Watch everywhere</span>
+            <span>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+        </div>
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+
+    <section class="first second">
+
+        <div class="secImg">
+            <img src="https://occ-0-2849-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                alt="">
+
+        </div>
+        <div>
+            <span>Create profiles for kids</span>
+            <span>Send children on adventures with their favourite characters in a space made just for them—free
+                with
+                your membership.</span>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section id="movies">
+        <h2>Featured Movies</h2>
+        <ul id="movie-list"></ul>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faqbox">
+                <div class="question">
+                    <span>What is Netflix?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="question">
+                    <span>How much does Netflix cost?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="question">
+                    <span>What can I watch on Netflix?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="question">
+                    <span>Where can I watch?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <footer>
+        <div class="questions">
+            Questions? Call 000-800-919-1694
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                <a href="faq">Investor Relations</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Ways to Watch</a>
+                <a href="faq">Terms of Use</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="faq">Help Centre</a>
+                <a href="faq">Account</a>
+                <a href="faq">Speed Test</a>
+                <a href="faq">Legal Notices</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Media Centre</a>
+                <a href="faq">Privacy</a>
+                <a href="faq">Cookie Preferences</a>
+                <a href="faq">Corporate</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="faq">Contact Us</a>
+                <a href="faq">Speed Test</a>
+                <a href="faq">Legal Notices</a>
+                <a href="faq">Only on Netflix</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>

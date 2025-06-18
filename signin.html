@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="signin-body">
+    <div class="signin-container">
+        <form class="signin-form" id="signinForm" autocomplete="off">
+            <h1>Sign In</h1>
+            <div class="input-group">
+                <input type="email" id="signin-email" placeholder="Email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="input-group password-group">
+                <input type="password" id="signin-password" placeholder="Password" required minlength="4">
+                <button type="button" id="toggle-password" class="toggle-password">Show</button>
+                <span class="error-message" id="password-error"></span>
+            </div>
+            <button type="submit" class="btn btn-red">Sign In</button>
+            <button type="button" class="btn btn-google" id="google-signin"><img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="google-icon"> Sign in with Google</button>
+            <div class="signin-options">
+                <label><input type="checkbox" id="remember-me"> Remember me</label>
+                <a href="#" class="help-link" id="forgot-password-link">Forgot password?</a>
+            </div>
+            <div class="signup-link">
+                New to Netflix? <a href="index.html">Go to Home</a>
+            </div>
+        </form>
+    </div>
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h2>Forgot Password?</h2>
+            <p>For demo purposes, password reset is not implemented.<br>Please contact support@netflix.com.</p>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+</html> 
